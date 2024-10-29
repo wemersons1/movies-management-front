@@ -1,0 +1,21 @@
+.Button {
+    width: 100%;
+}
+
+.Button button {
+    padding: .25rem;
+    font-size: 1rem;
+    width: 100%;
+    color: white;
+    border-radius: .4rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #007BFF;
+}
+
+.Button button:hover {
+    transition: all .4s ease;
+    -webkit-transition: all .8s ease;
+    filter: brightness(50%);
+}

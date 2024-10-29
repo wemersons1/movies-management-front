@@ -1,0 +1,104 @@
+.Header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    padding: 0;
+    top: 0;
+    height: var(--height-header);
+    border-bottom: 1px solid lightgrey;
+}
+
+.Header>div:first-child {
+    flex: 8;
+}
+
+.Cart {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.QuantityItems {
+    border-radius: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: var(--color-danger);
+    position: absolute;
+    top: -.8rem;
+    right: -.8rem;
+    padding: 1rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.Header>ul {
+    padding: 1rem 0;
+}
+
+.Header>ul:hover {
+    cursor: default;
+}
+
+.Header>ul>li {
+    color: var(--color-light-dark);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-right: 1.5rem;
+    padding-left: .8rem;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid lightgrey;
+
+}
+
+.Icon {
+    fill: var(--color-light-dark);
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.Search {
+    display: flex;
+}
+
+.Search input {
+    border: 1px solid lightgrey;
+    margin: auto 0;
+    padding: .8rem 0;
+    font-size: 1.6rem;
+    width: 90%;
+}
+
+.Search input:focus {
+    outline: none;
+}
+
+.Icon:active {
+    filter: brightness(50%);
+    background-color: lightgrey;
+    color: white;
+}
+
+@media(max-width: 768px) {
+
+
+    .Header>ul {
+        padding: .3rem;
+    }
+
+    .HeaderHidden {
+        height: var(--height-header);
+    }
+
+}

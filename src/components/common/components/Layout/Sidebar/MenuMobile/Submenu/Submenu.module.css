@@ -1,0 +1,54 @@
+.Submenu {
+    background: white;
+    border-radius: 1rem 1rem 0 0;
+    border: 1px solid lightgrey;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 1.5rem;
+}
+
+.Submenu h1 {
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.ShowSubmenu {
+    visibility: visible;
+}
+
+.HideSubmenu {
+    visibility: hidden;
+}
+
+.Submenu > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.Submenu > ul li{
+    width: 100%;
+    text-align: center;
+    margin: .4rem auto;
+}
+
+.Submenu > ul li a {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0 auto;
+    color: white!important;
+    padding: 1rem;
+    background-color: var(--color-menu);
+    border-radius: .3rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.LinkActive {
+
+}

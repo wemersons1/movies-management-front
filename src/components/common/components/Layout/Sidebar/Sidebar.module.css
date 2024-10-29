@@ -1,0 +1,211 @@
+.Sidebar {
+    background-color: var(--color-menu) !important;
+    min-width: 115px;
+    flex: .65;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.Sidebar>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sidebar ul li {
+    margin-bottom: .5rem;
+}
+
+.Sidebar ul li button {
+    width: 100%;
+}
+
+.Sidebar ul li a,
+.Sidebar ul li button,
+.SubMenu {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-menu);
+    padding: .4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.SubMenuSelected {
+    margin-left: 2rem;
+}
+
+.MenuItem {
+    display: block;
+    color: white;
+    padding: .5rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 100%;
+    text-align: left;
+    margin: .5rem;
+
+}
+
+.Icon {
+    fill: var(--color-light);
+    font-size: 2.8rem;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    margin-left: .5rem;
+}
+
+.Sidebar ul li a:hover .Icon {
+    fill: var(--color-menu);
+}
+
+.Sidebar ul li a:hover {
+    background: var(--color-light) !important;
+    color: var(--color-menu) !important;
+    z-index: 3;
+    width: 100%;
+    border-radius: .2rem;
+}
+
+.Sidebar div:first-child {
+    padding: .7rem 2rem;
+}
+
+.LinkActive {
+    background: var(--color-light) !important;
+    color: var(--color-menu) !important;
+    z-index: 3;
+    width: 100%;
+    border-radius: .2rem 0 0 .2rem;
+}
+
+.LinkActive .Icon {
+    fill: var(--color-menu);
+    font-size: 2.8rem;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+    margin-right: 1rem;
+}
+
+.subMenu {
+    margin-left: 2.5rem;
+}
+
+.Menu {
+    background: var(--color-menu);
+    color: white;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-light);
+    width: 100%;
+    text-align: left;
+}
+
+.Menu:hover {
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    font-weight: bold;
+    background: var(--color-secondary);
+    margin-left: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--color-secondary);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Logo {
+    margin: .5rem;
+}
+
+
+
+.BurgerMenu,
+.BackgroundTransparent {
+    position: fixed;
+    z-index: 1000;
+    display: none;
+}
+
+.SpaceMenu {
+    display: none;
+}
+
+.HideSidebar {
+    display: block;
+}
+
+.MenuHeader {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-menu);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.MenuActive {
+    background-color: white;
+    color: var(--color-menu);
+    padding: .7rem;
+}
+
+.MenuUnActive {
+    color: white;
+    background-color: var(--color-menu);
+    padding: .7rem;
+}
+
+.MenuActive:hover,
+.MenuUnActive:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+
+    .SpaceMenu {
+        display: block;
+        height: 20px;
+    }
+
+    .Sidebar {
+        position: fixed;
+        z-index: 600;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .BackgroundTransparent {
+        display: flex;
+        z-index: 600;
+        border-radius: .5rem;
+        margin: .5rem;
+    }
+
+    .BackgroundTransparent button,
+    .BurgerMenu button {
+        background-color: var(--color-light-white);
+    }
+
+    .BurgerMenu {
+        display: flex;
+        background-color: var(--color-menu) !important;
+        z-index: 1000;
+        border-radius: .5rem;
+        margin: .5rem;
+    }
+
+    .BurgerMenu button {
+        background-color: transparent;
+    }
+
+    .HideSidebar {
+        display: none;
+    }
+}

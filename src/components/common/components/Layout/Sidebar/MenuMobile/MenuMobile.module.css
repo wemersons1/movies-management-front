@@ -1,0 +1,58 @@
+.MenuMobile {
+    height: var(--height-menu-mobile);
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-menu);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.MenuMobile > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+}
+
+.MenuMobile > ul, .MenuMobile > ul > li {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MenuMobile > ul a {
+    color: white!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.MenuMobile button
+{
+    background-color: transparent;
+    filter: brightness(60%);
+}
+
+.Icon {
+    fill: var(--color-light);
+    font-size: 2.8rem;
+}
+
+.LikNotActive {
+    filter: brightness(60%);
+}
+
+.LinkActive {
+    color: var(--color-menu)!important;
+    z-index: 3;
+    width: 100%;
+    border-radius: .2rem 0 0 .2rem;
+
+}

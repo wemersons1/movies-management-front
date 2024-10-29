@@ -1,0 +1,171 @@
+.Header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.Header>div:first-child {
+    flex: 8;
+}
+
+.Cart {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.QuantityItems {
+    border-radius: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: var(--color-danger);
+    position: absolute;
+    top: -.8rem;
+    right: -.8rem;
+    padding: 1rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.Notifications {
+    border-radius: 50%;
+    background-color: red;
+    top: 5px;
+    right: 7px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 10;
+    font-size: .95rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NotificationIcon:hover {
+    filter: brightness(50%);
+    fill: grey;
+    cursor: pointer;
+}
+
+.NotificationIcon {
+    margin-bottom: 1rem;
+}
+
+.Header>ul {
+    padding: 1rem 0;
+    position: relative;
+    user-select: none;
+}
+
+.Header>ul:hover {
+    cursor: default;
+}
+
+.Header>ul>li {
+    color: var(--color-light-dark);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-right: 1.5rem;
+    padding-left: .8rem;
+    display: flex;
+    align-items: center;
+}
+
+.SubMenu {
+    position: absolute;
+    z-index: 2200;
+    right: 0;
+    color: var(--color-light-dark);
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: .5rem;
+    width: 200px;
+    height: 142px;
+    overflow-y: auto;
+}
+
+.SubMenu li {
+    width: 100%;
+    cursor: pointer;
+}
+
+.SubMenu li:hover {
+    filter: brightness(50%);
+}
+
+.SubMenu li>a {
+    color: var(--color-light-dark);
+    border-bottom: 1px solid lightgrey;
+    padding: .75rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.Header>ul>li:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.Icon {
+    fill: var(--color-light-dark);
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.Search {
+    display: flex;
+}
+
+.Search input {
+    border: 1px solid lightgrey;
+    margin: auto 0;
+    padding: .8rem 0;
+    font-size: 1.6rem;
+    width: 90%;
+}
+
+.Search input:focus {
+    outline: none;
+}
+
+.Icon:active {
+    filter: brightness(50%);
+    background-color: lightgrey;
+    color: white;
+}
+
+@media(max-width: 768px) {
+
+    .Header {
+        position: fixed;
+        width: 100%;
+        z-index: 400;
+        padding: 0;
+        top: 0;
+        height: var(--height-header);
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .Header>ul {
+        padding: .3rem;
+    }
+
+    .HeaderHidden {
+        height: var(--height-header);
+    }
+
+}
